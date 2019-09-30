@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap-multiselect",
+  "name": "bootstrap-multiselect-edge",
   "version": "0.9.15",
   "description": "JQuery multiselect plugin based on Twitter Bootstrap.",
   "main": "dist/js/bootstrap-multiselect.js",
