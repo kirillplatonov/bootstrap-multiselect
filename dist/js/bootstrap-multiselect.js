@@ -41,19 +41,7 @@
  * OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
  * ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-;(function(factory) {
-    'use strict';
-    if (typeof define === 'function' && define.amd) {
-        // AMD
-        define(['jquery'], factory);
-    } else if (typeof module !== 'undefined' && module.exports) {
-        // CommonJS
-        module.exports = factory(require('jquery'));
-    } else {
-        // Global
-        factory(jQuery);
-    }
-})(function($) {
+!function ($) {
     "use strict";// jshint ;_;
 
     if (typeof ko !== 'undefined' && ko.bindingHandlers && !ko.bindingHandlers.multiselect) {
@@ -1774,4 +1762,4 @@
         $("select[data-role=multiselect]").multiselect();
     });
 
-});
+}(window.jQuery);
